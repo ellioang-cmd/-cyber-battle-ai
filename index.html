@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Battle: Human vs AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="game-container">
+    <h1>CYBER BATTLE</h1>
+    <h2>Human vs AI</h2>
+    <p>Defend your system against an intelligent AI hacker!</p>
+
+    <section class="battle-arena">
+      <div class="player">
+        <h3>Human Defender</h3>
+        <p>Health: <span id="player-health">100</span></p>
+        <div class="health-bar">
+          <div id="player-health-bar"></div>
+        </div>
+      </div>
+
+      <div class="player">
+        <h3>AI Hacker</h3>
+        <p>Health: <span id="ai-health">100</span></p>
+        <div class="health-bar">
+          <div id="ai-health-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <h3>Choose Your Action</h3>
+
+    <div class="actions">
+      <button id="attack-btn">Attack</button>
+      <button id="defend-btn">Defend</button>
+      <button id="heal-btn">Restore System</button>
+    </div>
+
+    <div class="battle-log">
+      <h3>Battle Log</h3>
+      <p id="game-message">The cyber battle is ready!</p>
+    </div>
+
+    <button id="restart-btn">Restart Game</button>
+  </main>
+</body>
+</html>
